@@ -2,10 +2,11 @@ const bedrock = require('bedrock-protocol')
 
 // CONFIGURE AQUI COM OS DADOS DO SEU SERVIDOR
 const config = {
-  host: 'Duarte5743-EXdi.aternos.me', // Seu endereço (da print)
-  port: 60029,                         // Sua porta (da print)
-  username: 'MeuBotBedrock',           // Nome do bot
-  offline: true                        // ESSENCIAL para Aternos!
+  host: 'Duarte5743-EXdi.aternos.me',
+  port: 60029,
+  username: 'MeuBot',
+  offline: true,
+  version: '1.26.33' // <--- LINHA NOVA ADICIONADA AQUI!
 }
 
 console.log('🔄 Conectando ao servidor Bedrock...')
