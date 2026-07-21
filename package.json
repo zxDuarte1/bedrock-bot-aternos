@@ -1,7 +1,6 @@
 {
   "name": "meu-bot-bedrock",
   "version": "1.0.0",
-  "description": "Bot para servidor Bedrock no Aternos",
   "main": "bot.js",
   "scripts": {
     "start": "node bot.js"
