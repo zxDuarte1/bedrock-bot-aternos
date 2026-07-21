@@ -1,8 +1,8 @@
 const bedrock = require('bedrock-protocol')
 
 const config = {
-  host: 'Duarte5743-EXdi.aternos.me', // SEU ENDEREÇO
-  port: 60029,                         // SUA PORTA ATUAL
+  host: 'Duarte5743-EXdi.aternos.me',
+  port: 60029,
   username: 'MeuBot',
   offline: true,
   version: '1.26.30'
@@ -15,11 +15,6 @@ const client = bedrock.createClient(config)
 
 client.on('join', () => {
   console.log('✅ BOT ENTROU NO SERVIDOR!')
-  console.log(`👤 Nome: ${client.username}`)
-})
-
-client.on('text', (packet) => {
-  console.log(`💬 ${packet.source_name}: ${packet.message}`)
 })
 
 client.on('error', (err) => {
