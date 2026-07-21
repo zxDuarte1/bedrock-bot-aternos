@@ -1,12 +1,11 @@
 const bedrock = require('bedrock-protocol')
 
-// CONFIGURE AQUI COM OS DADOS DO SEU SERVIDOR
 const config = {
-  host: 'Duarte5743-EXdi.aternos.me',
-  port: 60029,
+  host: 'Duarte5743-EXdi.aternos.me', // SEU ENDEREÇO
+  port: 60029,                         // SUA PORTA ATUAL
   username: 'MeuBot',
   offline: true,
-  version: '1.26.30' // <--- LINHA NOVA ADICIONADA AQUI!
+  version: '1.26.30'
 }
 
 console.log('🔄 Conectando ao servidor Bedrock...')
@@ -31,7 +30,6 @@ client.on('disconnect', (reason) => {
   console.log(`🔌 Desconectado: ${reason}`)
 })
 
-// Mantém o bot "acordado" e mostra que está vivo
 setInterval(() => {
   console.log('⏰ Bot ainda está online...')
 }, 30000)
