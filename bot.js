@@ -6,7 +6,7 @@ const config = {
   port: 60029,
   username: 'MeuBot',
   offline: true,
-  version: '1.26.33' // <--- LINHA NOVA ADICIONADA AQUI!
+  version: '1.26.30' // <--- LINHA NOVA ADICIONADA AQUI!
 }
 
 console.log('🔄 Conectando ao servidor Bedrock...')
