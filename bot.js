@@ -5,7 +5,8 @@ const config = {
   port: 60029,
   username: 'MeuBot',
   offline: true,
-  version: '1.26.30'
+  version: '1.26.30',
+  skipPing: true // <--- ESTA É A LINHA MÁGICA QUE RESOLVE O PROBLEMA
 }
 
 console.log('🔄 Conectando ao servidor Bedrock...')
@@ -25,6 +26,7 @@ client.on('disconnect', (reason) => {
   console.log(`🔌 Desconectado: ${reason}`)
 })
 
+// Mantém o bot rodando
 setInterval(() => {
   console.log('⏰ Bot ainda está online...')
 }, 30000)
